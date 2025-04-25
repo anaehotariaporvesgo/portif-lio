@@ -1,90 +1,60 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
+ </style>
+</head>
+<body>
+  <!-- Página de entrada -->
+  <div class="intro">
+    <img src="logo-esporte.png" alt="Logo do Esporte">
+    <button onclick="document.querySelector('.main').scrollIntoView({behavior: 'smooth'})">ENTRA</button>
+  </div>  <!-- Página principal -->  <div class="main">
+    <header>
+      <div class="logo">Portfólio Esportivo</div>
+    </header><nav>
+  Atletismo | Natação | Basquete
+</nav>
 
-.tela-inicial {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #e0e0e0;
-}
+<div class="container">
+  <!-- Seção Atletismo -->
+  <div class="section" id="atletismo">
+    <h2>Atletismo</h2>
+    <img src="atletismo.jpg" alt="Imagem de Atletismo">
+    <p>O atletismo é uma das mais antigas práticas esportivas e inclui provas de corrida, salto e arremesso.</p>
+    <div class="cards">
+      <div class="card">Corrida de 100m</div>
+      <div class="card">Salto em distância</div>
+      <div class="card">Arremesso de peso</div>
+    </div>
+  </div>
 
-.logo-esporte {
-  border: 2px solid #000;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
+  <!-- Seção Natação -->
+  <div class="section" id="natacao">
+    <h2>Natação</h2>
+    <img src="natacao.jpg" alt="Imagem de Natação">
+    <p>A natação é um esporte completo que trabalha o corpo todo e tem várias modalidades como crawl, peito e borboleta.</p>
+    <div class="cards">
+      <div class="card">50m livre</div>
+      <div class="card">100m peito</div>
+      <div class="card">200m borboleta</div>
+    </div>
+  </div>
 
-.botao-entrar {
-  padding: 10px 20px;
-  background: #000;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-}
+  <!-- Seção Basquete -->
+  <div class="section" id="basquete">
+    <h2>Basquete</h2>
+    <img src="basquete.jpg" alt="Imagem de Basquete">
+    <p>O basquete é um esporte coletivo jogado por duas equipes com o objetivo de acertar a bola no cesto adversário.</p>
+    <div class="cards">
+      <div class="card">Arremessos</div>
+      <div class="card">Dribles</div>
+      <div class="card">Defesa em zona</div>
+    </div>
+  </div>
+</div>
 
-.pagina-principal {
-  padding: 20px;
-}
+<footer>
+  Criado por Isabela nº 17, Helen nº 14, Sofia nº 36
+</footer>
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  </div>
+</body>
+</html>
 
-.descricao {
-  margin: 20px 0;
-}
-
-.galeria img {
-  width: 30%;
-  margin: 5px;
-}
-
-.conteudo {
-  margin-top: 20px;
-}
-
-.imagem-grande img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.texto p {
-  margin: 10px 0;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.card {
-  width: calc(50% - 10px);
-  height: 100px;
-  background: #ccc;
-}
-
-footer {
-  margin-top: 20px;
-  text-align: center;
-}
-
-.logo {
-  font-weight: bold;
-}

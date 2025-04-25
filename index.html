@@ -1,58 +1,76 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Esportivo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Tela inicial -->
-  <section class="tela-inicial">
-    <div class="logo-esporte">Logo do Esporte</div>
-    <a href="#home" class="botao-entrar">ENTRA</a>
-  </section>
+  <title>Portfólio Esportivo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background-color: #f5f5f5;
+}
 
-  <!-- Pagina principal -->
-  <section id="home" class="pagina-principal">
-    <header>
-      <h1>Portfolio</h1>
-      <nav class="menu">
-        <span>Menu</span>
-      </nav>
-    </header>
+header, nav, footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
 
-    <main>
-      <div class="descricao">
-        <h2>Descricao</h2>
-        <p>Texto descritivo sobre o esporte ou projeto.</p>
-      </div>
+.logo {
+  font-size: 1.5rem;
+}
 
-      <div class="galeria">
-        <img src="img1.jpg" alt="Imagem 1">
-        <img src="img2.jpg" alt="Imagem 2">
-        <img src="img3.jpg" alt="Imagem 3">
-      </div>
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-color: #e0e0e0;
+}
 
-      <section class="conteudo">
-        <div class="imagem-grande">
-          <img src="imagem-grande.jpg" alt="Imagem destaque">
-        </div>
-        <div class="texto">
-          <p>Linha 1 do texto</p>
-          <p>Linha 2 do texto</p>
-        </div>
-        <div class="cards">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-        <footer>
-          <div class="logo">LOGO</div>
-        </footer>
-      </section>
-    </main>
-  </section>
-</body>
-</html>
+.intro img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}

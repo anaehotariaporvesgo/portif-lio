@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Esportivo</title>
+  <title>Portfolio Esportivo</title>
   <style>
     * {
       margin: 0;
@@ -83,35 +83,35 @@ header, nav, footer {
   </style>
 </head>
 <body>
-  <!-- Página de entrada -->
+  <!-- Pagina de entrada -->
   <div class="intro">
     <img src="logo-esporte.png" alt="Logo do Esporte">
     <button onclick="document.querySelector('.main').scrollIntoView({behavior: 'smooth'})">ENTRA</button>
-  </div>  <!-- Página principal -->  <div class="main">
+  </div>  <!-- Pagina principal -->  <div class="main">
     <header>
-      <div class="logo">Portfólio Esportivo</div>
+      <div class="logo">Portfolio Esportivo</div>
     </header><nav>
-  Atletismo | Natação | Basquete
+  Atletismo | Natacao | Basquete
 </nav>
 
 <div class="container">
-  <!-- Seção Atletismo -->
+  <!-- Secao Atletismo -->
   <div class="section" id="atletismo">
     <h2>Atletismo</h2>
     <img src="atletismo.jpg" alt="Imagem de Atletismo">
-    <p>O atletismo é uma das mais antigas práticas esportivas e inclui provas de corrida, salto e arremesso.</p>
+    <p>O atletismo e uma das mais antigas praticas esportivas e inclui provas de corrida, salto e arremesso.</p>
     <div class="cards">
       <div class="card">Corrida de 100m</div>
-      <div class="card">Salto em distância</div>
+      <div class="card">Salto em distancia</div>
       <div class="card">Arremesso de peso</div>
     </div>
   </div>
 
-  <!-- Seção Natação -->
+  <!-- Secao Natacao -->
   <div class="section" id="natacao">
-    <h2>Natação</h2>
-    <img src="natacao.jpg" alt="Imagem de Natação">
-    <p>A natação é um esporte completo que trabalha o corpo todo e tem várias modalidades como crawl, peito e borboleta.</p>
+    <h2>Natacao</h2>
+    <img src="natacao.jpg" alt="Imagem de Natacao">
+    <p>A natacao e um esporte completo que trabalha o corpo todo e tem varias modalidades como crawl, peito e borboleta.</p>
     <div class="cards">
       <div class="card">50m livre</div>
       <div class="card">100m peito</div>
@@ -119,11 +119,11 @@ header, nav, footer {
     </div>
   </div>
 
-  <!-- Seção Basquete -->
+  <!-- Secao Basquete -->
   <div class="section" id="basquete">
     <h2>Basquete</h2>
     <img src="basquete.jpg" alt="Imagem de Basquete">
-    <p>O basquete é um esporte coletivo jogado por duas equipes com o objetivo de acertar a bola no cesto adversário.</p>
+    <p>O basquete e um esporte coletivo jogado por duas equipes com o objetivo de acertar a bola no cesto adversario.</p>
     <div class="cards">
       <div class="card">Arremessos</div>
       <div class="card">Dribles</div>
@@ -133,7 +133,7 @@ header, nav, footer {
 </div>
 
 <footer>
-  Criado por Isabela nº 17, Helen nº 14, Sofia nº 36
+  Criado por Isabela n 20, Helen n 17, Sofia n 36
 </footer>
 
   </div>

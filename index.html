@@ -1,60 +1,77 @@
-</style>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Esportes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Pagina de entrada -->
-  <div class="intro">
-    <img src="img/logo cep.png" alt="Logo do Esporte Do CEP">
-    <button onclick="document.querySelector('.main').scrollIntoView({behavior: 'smooth'})">ENTRA</button>
-  </div>  <!-- Pagina principal -->  <div class="main">
-    <header>
-      <div class="logo">Portifolio Esportivo</div>
-    </header><nav>
-  Atletismo | Natacao | Basquete
-</nav>
 
-<div class="container">
-  <!-- Secao Atletismo -->
-  <div class="section" id="atletismo">
-    <h2>Atletismo</h2>
-    <img src="img/atletismo.jpg" alt="Imagem de Atletismo">
-    <p>O atletismo e uma das mais antigas praticas esportivas e inclui provas de corrida, salto e arremesso.</p>
-    <div class="cards">
-      <div class="card">Corrida de 100m</div>
-      <div class="card">Salto em distancia</div>
-      <div class="card">Arremesso de peso</div>
-    </div>
+<!-- Pagina de entrada -->
+<section class="vh-100 d-flex flex-column justify-content-center align-items-center bg-primary text-white">
+  <img src="img/logo-cep.png" alt="Logo do Esporte Do CEP" class="img-fluid mb-4" style="max-width: 200px;">
+  <button class="btn btn-light" onclick="document.querySelector('.main').scrollIntoView({behavior: 'smooth'})">ENTRA</button>
+</section>
+
+<!-- Pagina principal -->
+<div class="main container py-5">
+  <header class="text-center mb-5">
+    <h1 class="display-4">Portfolio Esportivo</h1>
+    <p class="lead">Alunas: Isabela n 20, Helen n 17, Sofia n 36</p>
+  </header>
+
+  <nav class="nav justify-content-center mb-5">
+    <a class="nav-link" href="#atletismo">Atletismo</a>
+    <a class="nav-link" href="#natacao">Natacao</a>
+    <a class="nav-link" href="#basquete">Basquete</a>
+  </nav>
+
+  <div class="row g-5">
+    <!-- Atletismo -->
+    <section id="atletismo" class="col-12">
+      <h2 class="text-center mb-4">Atletismo</h2>
+      <img src="img/atletismo.jpg" alt="Imagem de Atletismo" class="img-fluid rounded mx-auto d-block mb-3">
+      <p class="text-center">O atletismo e uma das mais antigas praticas esportivas e inclui provas de corrida, salto e arremesso.</p>
+      <div class="row text-center">
+        <div class="col-md-4"><div class="card p-3">Corrida de 100m</div></div>
+        <div class="col-md-4"><div class="card p-3">Salto em distancia</div></div>
+        <div class="col-md-4"><div class="card p-3">Arremesso de peso</div></div>
+      </div>
+    </section>
+
+    <!-- Natacao -->
+    <section id="natacao" class="col-12">
+      <h2 class="text-center mb-4">Natacao</h2>
+      <img src="img/natacao.png" alt="Imagem de Natacao" class="img-fluid rounded mx-auto d-block mb-3">
+      <p class="text-center">A natacao e um esporte completo que trabalha o corpo todo e tem varias modalidades como crawl, peito e borboleta.</p>
+      <div class="row text-center">
+        <div class="col-md-4"><div class="card p-3">50m livre</div></div>
+        <div class="col-md-4"><div class="card p-3">100m peito</div></div>
+        <div class="col-md-4"><div class="card p-3">200m borboleta</div></div>
+      </div>
+    </section>
+
+    <!-- Basquete -->
+    <section id="basquete" class="col-12">
+      <h2 class="text-center mb-4">Basquete</h2>
+      <img src="img/basquete.webp" alt="Imagem de Basquete" class="img-fluid rounded mx-auto d-block mb-3">
+      <p class="text-center">O basquete e um esporte coletivo jogado por duas equipes com o objetivo de acertar a bola no cesto adversario.</p>
+      <div class="row text-center">
+        <div class="col-md-4"><div class="card p-3">Arremessos</div></div>
+        <div class="col-md-4"><div class="card p-3">Dribles</div></div>
+        <div class="col-md-4"><div class="card p-3">Defesa em zona</div></div>
+      </div>
+    </section>
   </div>
 
-  <!-- Secao Natacao -->
-  <div class="section" id="natacao">
-    <h2>Natacao</h2>
-    <img src="img/natacao.png" alt="Imagem de Natacao">
-    <p>A natacao e um esporte completo que trabalha o corpo todo e tem varias modalidades como crawl, peito e borboleta.</p>
-    <div class="cards">
-      <div class="card">50m livre</div>
-      <div class="card">100m peito</div>
-      <div class="card">200m borboleta</div>
-    </div>
-  </div>
-
-  <!-- Secao Basquete -->
-  <div class="section" id="basquete">
-    <h2>Basquete</h2>
-    <img src="img/basquete.webp" alt="Imagem de Basquete">
-    <p>O basquete e um esporte coletivo jogado por duas equipes com o objetivo de acertar a bola no cesto adversario.</p>
-    <div class="cards">
-      <div class="card">Arremessos</div>
-      <div class="card">Dribles</div>
-      <div class="card">Defesa em zona</div>
-    </div>
-  </div>
+  <footer class="text-center mt-5 py-3">
+    <small>Criado por Isabela n 20, Helen n 17, Sofia n 36</small>
+  </footer>
 </div>
 
-<footer>
-  Criado por Isabela n 20, Helen n 17, Sofia n 36
-</footer>
-
-  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
